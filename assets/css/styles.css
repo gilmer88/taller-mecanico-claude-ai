@@ -1,0 +1,44 @@
+/*variables y reset */
+
+:root {
+    --color-primary:      #2563EB;
+    --color-primary-dark: #1A2B4A;
+    --color-accent:       #f97316;
+    --color-accent-light: #FDBA74;
+    --color-bg:           #F1F5F9;
+    --color-white:        #FFFFFF;
+    --color-text:         #1E293B;
+    --color-text-muted:   #64748b;
+    --color-border:       #E2E8F0;
+
+    --sidebar-with:240px;
+    --topbar-height:64px;
+    --radius: 8px;
+    --shadow: 0 1px 3px rgba(0,0,0,0.1);
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Segoe UI', sans-serif;
+    background: var(--color-bg);
+    color: var(--color-text);
+    font-size: 14px;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+ul {
+    list-style: none;
+}
+button {
+    cursor: pointer;
+    border: none;
+    background: none;
+}
