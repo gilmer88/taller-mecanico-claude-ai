@@ -114,10 +114,147 @@
             
             <section class="stats">
                 <!--tarjetas metricas-->
+
+                <div class="stats__card">
+                    <div class="stats__info">
+                        <span class="stats__number">258</span>
+                        <span class="stats__label">Clientes registrados</span>
+                    </div>
+
+                    <div class="stats__icon stats__icon--blue">
+                        <i class="fa-solid fa-users"></i>
+                    </div>
+                </div>
+
+                <div class="stats__card">
+                    <div class="stats__info">
+                        <span class="stats__number">15</span>
+                        <span class="stats__label">Vehículos en taller</span>
+                    </div>
+                        <div class="stats__icon stats__icon--green">
+                        <i class="fa-solid fa-car"></i>
+                    </div>
+                </div>
+
+                <div class="stats__card">
+                    <div class="stats__info">
+                        <span class="stats__number">8</span>
+                        <span class="stats__label">Órdenes pendientes</span>
+                    </div>
+                        <div class="stats__icon stats__icon--orange">
+                        <i class="fa-solid fa-wrench"></i>
+                    </div>
+                </div>
+
+                <div class="stats__card">
+                    <div class="stats__info">
+                        <span class="stats__number">12</span>
+                        <span class="stats__label">Facturas por cobrar</span>
+                    </div>
+                        <div class="stats__icon stats__icon--red">
+                        <i class="fa-solid fa-dollar-sign"></i>
+                    </div>
+                </div>
+
+
             </section>
 
             <section class="orders">
                 <!--tabla de ordenes-->
+
+                <div class="orders__header">
+                    <h2 class="orders__title">Órdenes de trabajo</h2>
+                    <button class="orders__btn-new">
+                        <i class="fa-solid fa-plus"></i>
+                        Nueva orden
+                    </button>
+                </div>
+
+                <div class="orders__table-wrapper">
+                    <table class="orders__table">
+
+                        <thead>
+                            <tr>
+                            <th>N° Orden</th>
+                            <th>Cliente</th>
+                            <th>Vehículo</th>
+                            <th>Técnico</th>
+                            <th>Estado</th>
+                            <th>Acciones</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+                            <td>#1023</td>
+                            <td>Juan Pérez</td>
+                            <td>Toyota Corolla</td>
+                            <td>Carlos</td>
+                            <td><span class="badge badge--process">En proceso</span></td>
+                            <td>
+                                <button class="orders__action-btn">
+                                    <i class="fa-solid fa-eye"></i>
+                                </button>
+                                <button class="orders__action-btn">
+                                    <i class="fa-solid fa-pen"></i>
+                                </button>
+                            </td>
+                            </tr>
+
+                            <tr>
+                            <td>#1024</td>
+                            <td>María Gómez</td>
+                            <td>Ford Focus</td>
+                            <td>Luis</td>
+                            <td><span class="badge badge--pending">Pendiente</span></td>
+                            <td>
+                                <button class="orders__action-btn">
+                                <i class="fa-solid fa-eye"></i>
+                                </button>
+                                <button class="orders__action-btn">
+                                <i class="fa-solid fa-pen"></i>
+                                </button>
+                            </td>
+                            </tr>
+
+                            <tr>
+                            <td>#1025</td>
+                            <td>Andrés Ruiz</td>
+                            <td>Honda Civic</td>
+                            <td>Pedro</td>
+                            <td><span class="badge badge--done">Terminada</span></td>
+                            <td>
+                                <button class="orders__action-btn">
+                                    <i class="fa-solid fa-eye"></i>
+                                </button>
+                                <button class="orders__action-btn">
+                                    <i class="fa-solid fa-pen"></i>
+                                </button>
+                            </td>
+                            </tr>
+
+                            <tr>
+                            <td>#1026</td>
+                            <td>Laura Torres</td>
+                            <td>Nissan Sentra</td>
+                            <td>Ana</td>
+                            <td><span class="badge badge--pending">Pendiente</span></td>
+                            <td>
+                                <button class="orders__action-btn">
+                                    <i class="fa-solid fa-eye"></i>
+                                </button>
+                                <button class="orders__action-btn">
+                                    <i class="fa-solid fa-pen"></i>
+                                </button>
+                            </td>
+                            </tr>
+                        </tbody>
+
+                    </table>
+                </div>
+
+
             </section>
         </main>
     </div>
