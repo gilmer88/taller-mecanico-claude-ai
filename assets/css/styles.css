@@ -42,3 +42,44 @@ button {
     border: none;
     background: none;
 }
+
+.wrapper {
+    margin-left: var(--sidebar-with);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: var(--sidebar-with);
+    height: 100vh;
+    background: var(--color-primary-dark);
+    display: flex;
+    flex-direction: column;
+    z-index: 100;
+}
+
+.main-content {
+    padding: 24px;
+    flex: 1;
+    margin-top: var(--topbar-height);
+}
+
+.topbar {
+    position: fixed;
+    top: 0;
+    left: var(--sidebar-with);
+    right: 0;
+    height: var(--topbar-height);
+    background: var(--color-white);
+    border-bottom: 1 px solid var(--color-border);
+    display: flex;
+    align-items: center;
+    padding: 0 24px;
+    gap: 16px;
+    z-index: 99;
+
+}
