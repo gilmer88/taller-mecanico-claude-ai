@@ -136,3 +136,104 @@ button {
 .sidebar__label{
     font-size: 14px;
 }
+
+.topbar__menu-btn{
+    font-size: 18px;
+    color: var(--color-text-muted);
+    padding: 8px;
+    border-radius: var(--radius);
+    transition: all 0.2s;
+}
+.topbar__menu-btn:hover{
+    background: var(--color-bg);
+    color: var(--color-text);
+}
+.topbar__search{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--color-bg);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    padding: 8px 14px;
+    flex: 1;
+    max-width: 400px;
+    color:var(--color-text-muted);
+}
+.topbar__search input{
+    border: none;
+    background: none;
+    outline: none;
+    font-size: 14px;
+    color: var(--color-text);
+    width: 100%;
+}
+
+.topbar__search input::placeholder{
+    color: var(--color-text-muted);
+}
+
+.topbar__actions{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-left: auto;
+}
+
+.topbar__btn {
+    font-size: 16px;
+    color: var(--color-text-muted);
+    padding: 8px;
+    border-radius: var(--radius);
+    transition: all 0.2s;
+}
+
+.topbar__btn:hover{
+    background: var(--color-bg);
+    color:var(--color-text);
+}
+
+.topbar__profile{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 6px 10px;
+    border-radius: var(--radius);
+    cursor: pointer;
+    transition: all 0.2s;
+    margin-left: 8px;
+}
+
+.topbar__profile:hover{
+    background: var(--color-bg);
+}
+
+.topbar__avatar{
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: var(--color-primary);
+    color: var(--color-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.topbar__user-info{
+    display: flex;
+    flex-direction: column;
+}
+
+.topbar__use-name{
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--color-text);
+
+}
+
+.topbar__user-role{
+    font-size: 11px;
+    color: var(--color-text-muted);
+}
