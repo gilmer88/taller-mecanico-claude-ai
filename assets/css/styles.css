@@ -237,3 +237,65 @@ button {
     font-size: 11px;
     color: var(--color-text-muted);
 }
+
+.stats{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.stats__card{
+    background: var(--color-white);
+    border-radius: var(--radius);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: var(--shadow);
+
+}
+
+.stats__number{
+    display: block;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 6px;
+
+}
+
+.stats__label{
+    font-size: 13px;
+    color: var(--color-text-muted);
+}
+
+.stats__icon{
+    width: 52px;
+    height: 52px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+}
+
+.stats__icon--blue{
+    background: var(#EFF6FF);
+    color: var(--color-primary);
+}
+
+.stats__icon--green{
+    background: #F0FDF4;
+    color: #16a34a;
+}
+
+.stats__icon--orange{
+    background: #fff7ed;
+    color: var(--color-accent);
+}
+
+.stats__icon--red{
+    background: #FEF2F2;
+    color: #DC2626;
+}
