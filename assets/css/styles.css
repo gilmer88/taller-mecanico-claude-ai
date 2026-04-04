@@ -83,3 +83,56 @@ button {
     z-index: 99;
 
 }
+
+.sidebar__logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 20px 24px;
+    color: var(--color-white);
+    font-size: 18px;
+    font-weight: 700;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.sidebar__logo-icon{
+    color: var(--color-accent);
+    font-size: 22px;
+}
+
+.sidebar__nav{
+    padding: 16px 0;
+    flex: 1;
+}
+
+.sidebar__item{
+    margin: 2px 12px;
+
+}
+
+.sidebar__link{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 16px;
+    border-radius: var(--radius);
+    color: rgba(255, 255, 255, 0.65);
+    transition: all 0.2s;
+}
+
+.sidebar__link:hover{
+    background: rgba(255, 255, 255, 0.08);
+    color: var(--color-white);
+}
+.sidebar__item--active .sidebar__link{
+    background: var(--color-primary);
+    color: var(--color-white);
+}
+.sidebar__icon{
+    font-size: 16px;
+    width: 20px;
+    text-align: center;
+}
+.sidebar__label{
+    font-size: 14px;
+}
