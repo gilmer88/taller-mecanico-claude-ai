@@ -39,9 +39,25 @@ filterBtns.forEach(function(btn){
             } else {
                 row.style.display = 'none';
             }
+
+         
         });
 
         
     });
 });
 
+
+//actualizar contador de pendientes  
+
+function actualizarContadores() {
+    let pendientes = 0;
+    rows.forEach(function(row) {
+        const estado = row.querySelector('.badge').textContent.trim();
+        if(estado === 'Pendiente') {
+            pendientes++;
+        }
+    });
+    document.getElementById('total-pendientes').textContent = pendientes;
+}
+actualizarContadores();
